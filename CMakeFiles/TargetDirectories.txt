@@ -1,0 +1,7 @@
+/home/troll/Desktop/discord-rpc-cli/CMakeFiles/discord-rpc.dir
+/home/troll/Desktop/discord-rpc-cli/CMakeFiles/edit_cache.dir
+/home/troll/Desktop/discord-rpc-cli/CMakeFiles/rebuild_cache.dir
+/home/troll/Desktop/discord-rpc-cli/CMakeFiles/list_install_components.dir
+/home/troll/Desktop/discord-rpc-cli/CMakeFiles/install.dir
+/home/troll/Desktop/discord-rpc-cli/CMakeFiles/install/local.dir
+/home/troll/Desktop/discord-rpc-cli/CMakeFiles/install/strip.dir

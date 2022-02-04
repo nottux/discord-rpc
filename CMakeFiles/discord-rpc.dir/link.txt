@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o -o discord-rpc  -Wl,-rpath,/home/troll/Desktop/discord-rpc-cli/lib: lib/libdiscord-rpc.so 
