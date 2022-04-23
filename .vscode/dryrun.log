@@ -1,0 +1,25 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/nolife/discord-rpc-cli'
+/usr/bin/cmake -S/home/nolife/discord-rpc-cli -B/home/nolife/discord-rpc-cli --check-build-system CMakeFiles/Makefile.cmake 0
+/usr/bin/cmake -E cmake_progress_start /home/nolife/discord-rpc-cli/CMakeFiles /home/nolife/discord-rpc-cli//CMakeFiles/progress.marks
+make -s -f CMakeFiles/Makefile2 all
+make[1]: Entering directory '/home/nolife/discord-rpc-cli'
+make -s -f CMakeFiles/discord-rpc.dir/build.make CMakeFiles/discord-rpc.dir/depend
+ 
+make[2]: Entering directory '/home/nolife/discord-rpc-cli'
+cd /home/troll/Desktop/discord-rpc-cli && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/troll/Desktop/discord-rpc-cli /home/troll/Desktop/discord-rpc-cli /home/troll/Desktop/discord-rpc-cli /home/troll/Desktop/discord-rpc-cli /home/troll/Desktop/discord-rpc-cli/CMakeFiles/discord-rpc.dir/DependInfo.cmake --color=
+make[2]: Leaving directory '/home/nolife/discord-rpc-cli'
+make -s -f CMakeFiles/discord-rpc.dir/build.make CMakeFiles/discord-rpc.dir/build
+ 
+make[2]: Entering directory '/home/nolife/discord-rpc-cli'
+/usr/bin/cmake -E cmake_echo_color --switch= --green --progress-dir=/home/troll/Desktop/discord-rpc-cli/CMakeFiles --progress-num=1 "Building CXX object CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o"
+/usr/bin/c++  -I/home/troll/Desktop/discord-rpc-cli/include  -MD -MT CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o -MF CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o.d -o CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o -c /home/troll/Desktop/discord-rpc-cli/discord-rpc.cpp
+/usr/bin/cmake -E cmake_echo_color --switch= --green --bold --progress-dir=/home/troll/Desktop/discord-rpc-cli/CMakeFiles --progress-num=2 "Linking CXX executable discord-rpc"
+/usr/bin/cmake -E cmake_link_script CMakeFiles/discord-rpc.dir/link.txt --verbose=
+make[2]: Leaving directory '/home/nolife/discord-rpc-cli'
+/usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/troll/Desktop/discord-rpc-cli/CMakeFiles --progress-num=1,2 "Built target discord-rpc"
+make[1]: Leaving directory '/home/nolife/discord-rpc-cli'
+ 
+/usr/bin/cmake -E cmake_progress_start /home/nolife/discord-rpc-cli/CMakeFiles 0
+make: Leaving directory '/home/nolife/discord-rpc-cli'
+ 

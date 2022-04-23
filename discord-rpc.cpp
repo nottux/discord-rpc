@@ -1,5 +1,5 @@
 #include <iostream>
-#include "discord_rpc.h"
+#include "include/discord_rpc.h"
 #include <cstring>
 #include <limits>
 #include <chrono>
@@ -31,20 +31,6 @@ static void updateDiscordPresence (char* details, char* state, char* largeImageK
     Discord_UpdatePresence(&discordPresence);
 }
 
-string toString (char* text)
-{
-    string output = "";
-    char str[strlen(text)] = ""; 
-    strcpy(str,text);
-    // for (int i = 0; text[i] != '\0'; i++)
-    //     output += text[i];
-    // bad readablity changed to range-loos
-    for (auto x : str){
-        output+=x;
-    }
-    return output;
-}
-
 int main (int argc, char* argv[])
 {
     char* details = {};
@@ -60,7 +46,7 @@ int main (int argc, char* argv[])
 
     for (int i = 0; i < argc; i++)
     {
-        std::string arg = argv[i];
+        std::string arg = argv[i];        
         cout << arg << endl;
         if (arg == "--application-id" || arg == "--app" || arg == "-a")
             for (int j = 0; j < 19; ++j)
@@ -108,7 +94,8 @@ int main (int argc, char* argv[])
     updateDiscordPresence(details, state, largeImageKey, smallImageKey, startTimestamp, endTimestamp);
 
     while (true){
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        std::this_thread::sleep_for(std::chrono::milliseconds(5000));
+        system("if pgrep -x \"GenshinImpact.e\" > /dev/null;then echo \"Running\" > /dev/null;else killall discord-rpc;fi");
     };
 
     return 0;
