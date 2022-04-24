@@ -95,7 +95,7 @@ int main (int argc, char* argv[])
 
     while (true){
         std::this_thread::sleep_for(std::chrono::milliseconds(5000));
-        system("if pgrep -x \"GenshinImpact.e\" > /dev/null;then echo \"Running\" > /dev/null;else killall discord-rpc;fi");
+        
     };
 
     return 0;

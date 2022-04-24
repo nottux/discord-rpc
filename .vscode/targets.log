@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Apr 24 17:56:56 2022
+# Make data base, printed on Sun Apr 24 18:02:38 2022
 
 # Variables
 
@@ -17,7 +17,7 @@ LC_ALL = C
 # environment
 NO_AT_BRIDGE = 1
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-439159ae-dca8-4bee-aac8-96d853b4c597.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-4f0c038e-b7bb-42d3-b807-86905b03e115.sock
 # environment
 VSCODE_CWD = /home/nolife
 # default
@@ -61,7 +61,7 @@ CURDIR := /home/nolife/discord-rpc
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
@@ -73,7 +73,7 @@ MFLAGS = -pqrR
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST := Makefile
 # makefile (from 'Makefile', line 63)
-CMAKE_BINARY_DIR = /home/nolife/discord-rpc-cli
+CMAKE_BINARY_DIR = /home/nolife/discord-rpc
 # automatic
 @F = $(notdir $@)
 # environment
@@ -81,13 +81,13 @@ LC_COLLATE = C
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 15382
+VSCODE_PID = 17819
 # environment
 XDG_SESSION_TYPE = tty
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # makefile (from 'Makefile', line 60)
-CMAKE_SOURCE_DIR = /home/nolife/discord-rpc-cli
+CMAKE_SOURCE_DIR = /home/nolife/discord-rpc
 # automatic
 *F = $(notdir $*)
 # environment
@@ -187,9 +187,9 @@ ELECTRON_NO_ATTACH_CONSOLE = 1
 
 # RCS: could not be stat'd.
 # SCCS: could not be stat'd.
-# . (device 66306, inode 560521): 15 files, no impossibilities.
+# . (device 66306, inode 560521): 17 files, no impossibilities.
 
-# 15 files, no impossibilities in 3 directories.
+# 17 files, no impossibilities in 3 directories.
 
 # Implicit Rules
 
@@ -245,7 +245,7 @@ edit_cache/fast: edit_cache
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-24 17:56:45.288388458
+#  Last modified 2022-04-24 17:58:39.715834749
 #  File has been updated.
 #  Successfully updated.
 
@@ -287,10 +287,10 @@ preinstall/fast:
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
- 
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 156):
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+ 
 
 edit_cache:
 #  Phony target (prerequisite of .PHONY).
@@ -351,9 +351,9 @@ all: cmake_check_build_system
 # variable set hash-table stats:
 # Load=0/32=0%, Rehash=0, Collisions=0/6=0%
 #  recipe to execute (from 'Makefile', line 135):
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nolife/discord-rpc-cli/CMakeFiles /home/nolife/discord-rpc-cli//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nolife/discord-rpc/CMakeFiles /home/nolife/discord-rpc//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nolife/discord-rpc-cli/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/nolife/discord-rpc/CMakeFiles 0
 
 help:
 #  Phony target (prerequisite of .PHONY).
@@ -525,12 +525,12 @@ discord-rpc.cpp.s:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 61 / storage = 753 B / avg = 12 B
-# current buf: size = 8162 B / used = 753 B / count = 61 / avg = 12 B
+# strcache buffers: 1 (0) / strings = 63 / storage = 775 B / avg = 12 B
+# current buf: size = 8162 B / used = 775 B / count = 63 / avg = 12 B
 
-# strcache performance: lookups = 214 / hit rate = 71%
+# strcache performance: lookups = 216 / hit rate = 70%
 # hash-table stats:
-# Load=61/8192=1%, Rehash=0, Collisions=0/214=0%
-# Finished Make data base on Sun Apr 24 17:56:56 2022
+# Load=63/8192=1%, Rehash=0, Collisions=0/216=0%
+# Finished Make data base on Sun Apr 24 18:02:38 2022
 
  
