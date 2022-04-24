@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/nolife/discord-rpc-cli/include
+CXX_INCLUDES = -I/home/nolife/discord-rpc/include
 
 CXX_FLAGS = 
 

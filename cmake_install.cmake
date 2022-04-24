@@ -1,4 +1,4 @@
-# Install script for directory: /home/nolife/discord-rpc-cli
+# Install script for directory: /home/nolife/discord-rpc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -50,12 +50,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
            FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/discord-rpc"
            RPATH "")
     endif()
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/nolife/discord-rpc-cli/discord-rpc")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/bin" TYPE EXECUTABLE FILES "/home/nolife/discord-rpc/discord-rpc")
     if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/discord-rpc" AND
        NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/discord-rpc")
       file(RPATH_CHANGE
            FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/discord-rpc"
-           OLD_RPATH "/home/nolife/discord-rpc-cli/lib:"
+           OLD_RPATH "/home/nolife/discord-rpc/lib:"
            NEW_RPATH "")
       if(CMAKE_INSTALL_DO_STRIP)
         execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/discord-rpc")
@@ -72,5 +72,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/nolife/discord-rpc-cli/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/nolife/discord-rpc/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

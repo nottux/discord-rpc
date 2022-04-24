@@ -1,1 +1,1 @@
-/usr/bin/c++ "CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o" -o discord-rpc  -Wl,-rpath,/home/nolife/discord-rpc-cli/lib: lib/libdiscord-rpc.so 
+/usr/bin/c++ "CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o" -o discord-rpc  -Wl,-rpath,/home/nolife/discord-rpc/lib: lib/libdiscord-rpc.so 

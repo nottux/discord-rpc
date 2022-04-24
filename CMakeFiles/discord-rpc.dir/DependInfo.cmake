@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/nolife/discord-rpc-cli/discord-rpc.cpp" "CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o" "gcc" "CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o.d"
+  "/home/nolife/discord-rpc/discord-rpc.cpp" "CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o" "gcc" "CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o.d"
   )
 
 # Targets to which this target links.

@@ -1,5 +1,5 @@
 CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o: \
- /home/nolife/discord-rpc-cli/discord-rpc.cpp /usr/include/stdc-predef.h \
+ /home/nolife/discord-rpc/discord-rpc.cpp /usr/include/stdc-predef.h \
  /usr/include/c++/11.2.0/iostream \
  /usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/c++config.h \
  /usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/os_defines.h \
@@ -129,7 +129,7 @@ CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o: \
  /usr/include/c++/11.2.0/bits/basic_ios.tcc \
  /usr/include/c++/11.2.0/bits/ostream.tcc /usr/include/c++/11.2.0/istream \
  /usr/include/c++/11.2.0/bits/istream.tcc \
- /home/nolife/discord-rpc-cli/include/discord_rpc.h \
+ /home/nolife/discord-rpc/include/discord_rpc.h \
  /usr/include/c++/11.2.0/cstring /usr/include/string.h \
  /usr/include/strings.h /usr/include/c++/11.2.0/limits \
  /usr/include/c++/11.2.0/chrono /usr/include/c++/11.2.0/ratio \
