@@ -4,12 +4,12 @@
 #include <limits>
 #include <chrono>
 #include <thread>
-
+#include <fstream>
 using namespace std;
 
 static char APPLICATION_ID[18] = {};
 
-static void updateDiscordPresence (char* details, char* state, char* largeImageKey, char* smallImageKey, int64_t startTimestamp, int64_t endTimestamp)
+static void updateDiscordPresence(char *details, char *state, char *largeImageKey, char *smallImageKey, int64_t startTimestamp, int64_t endTimestamp)
 {
     DiscordRichPresence discordPresence;
 
@@ -20,10 +20,10 @@ static void updateDiscordPresence (char* details, char* state, char* largeImageK
 
     if (startTimestamp != 0)
         discordPresence.startTimestamp = startTimestamp;
-    
+
     if (endTimestamp != 0)
         discordPresence.endTimestamp = endTimestamp;
-    
+
     discordPresence.largeImageKey = largeImageKey;
     discordPresence.smallImageKey = smallImageKey;
     discordPresence.instance = 0;
@@ -31,13 +31,13 @@ static void updateDiscordPresence (char* details, char* state, char* largeImageK
     Discord_UpdatePresence(&discordPresence);
 }
 
-int main (int argc, char* argv[])
+int main(int argc, char *argv[])
 {
-    char* details = {};
-    char* state = {};
+    char *details = {};
+    char *state = {};
 
-    char* largeImageKey = {};
-    char* smallImageKey = {};
+    char *largeImageKey = {};
+    char *smallImageKey = {};
 
     int64_t startTimestamp = 0;
     int64_t endTimestamp = 0;
@@ -46,7 +46,7 @@ int main (int argc, char* argv[])
 
     for (int i = 0; i < argc; i++)
     {
-        std::string arg = argv[i];        
+        std::string arg = argv[i];
         cout << arg << endl;
         if (arg == "--application-id" || arg == "--app" || arg == "-a")
             for (int j = 0; j < 19; ++j)
@@ -92,11 +92,13 @@ int main (int argc, char* argv[])
     Discord_Initialize(APPLICATION_ID, &handlers, 1, NULL);
 
     updateDiscordPresence(details, state, largeImageKey, smallImageKey, startTimestamp, endTimestamp);
-
-    while (true){
+    system("touch ~/.local/share/anime-game-launcher/logs/rpc.log");
+    ofstream LogFile;
+    
+    while (true)
+    {
         std::this_thread::sleep_for(std::chrono::milliseconds(5000));
-        
+        system("if pgrep -x \"GenshinImpact.e\" > /dev/null; then echo \"Running\";else if pgrep -x \"an-anime-game-l\" > /dev/null; then echo \"Launcher Running\" > ~/.local/share/anime-game-launcher/logs/rpc.log ;else killall discord-rpc > ~/.local/share/anime-game-launcher/logs/rpc.log;fi; fi");
     };
-
     return 0;
 }
