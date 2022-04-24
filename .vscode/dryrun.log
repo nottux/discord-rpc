@@ -5,7 +5,6 @@ make: Entering directory '/home/nolife/discord-rpc'
 make -s -f CMakeFiles/Makefile2 all
 make[1]: Entering directory '/home/nolife/discord-rpc'
 make -s -f CMakeFiles/discord-rpc.dir/build.make CMakeFiles/discord-rpc.dir/depend
- 
 make[2]: Entering directory '/home/nolife/discord-rpc'
 cd /home/nolife/discord-rpc && /usr/bin/cmake -E cmake_depends "Unix Makefiles" /home/nolife/discord-rpc /home/nolife/discord-rpc /home/nolife/discord-rpc /home/nolife/discord-rpc /home/nolife/discord-rpc/CMakeFiles/discord-rpc.dir/DependInfo.cmake --color=
 make[2]: Leaving directory '/home/nolife/discord-rpc'
@@ -14,11 +13,15 @@ make -s -f CMakeFiles/discord-rpc.dir/build.make CMakeFiles/discord-rpc.dir/buil
 make[2]: Entering directory '/home/nolife/discord-rpc'
 /usr/bin/cmake -E cmake_echo_color --switch= --green --progress-dir=/home/nolife/discord-rpc/CMakeFiles --progress-num=1 "Building CXX object CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o"
 /usr/bin/c++  -I/home/nolife/discord-rpc/include  -MD -MT CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o -MF CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o.d -o CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o -c /home/nolife/discord-rpc/discord-rpc.cpp
+ 
 /usr/bin/cmake -E cmake_echo_color --switch= --green --bold --progress-dir=/home/nolife/discord-rpc/CMakeFiles --progress-num=2 "Linking CXX executable discord-rpc"
 /usr/bin/cmake -E cmake_link_script CMakeFiles/discord-rpc.dir/link.txt --verbose=
 make[2]: Leaving directory '/home/nolife/discord-rpc'
+ 
 /usr/bin/cmake -E cmake_echo_color --switch= --progress-dir=/home/nolife/discord-rpc/CMakeFiles --progress-num=1,2 "Built target discord-rpc"
+ 
 make[1]: Leaving directory '/home/nolife/discord-rpc'
+ 
 /usr/bin/cmake -E cmake_progress_start /home/nolife/discord-rpc/CMakeFiles 0
 make: Leaving directory '/home/nolife/discord-rpc'
  
