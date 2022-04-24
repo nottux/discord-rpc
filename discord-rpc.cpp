@@ -4,7 +4,6 @@
 #include <limits>
 #include <chrono>
 #include <thread>
-#include <fstream>
 using namespace std;
 
 static char APPLICATION_ID[18] = {};
@@ -92,13 +91,11 @@ int main(int argc, char *argv[])
     Discord_Initialize(APPLICATION_ID, &handlers, 1, NULL);
 
     updateDiscordPresence(details, state, largeImageKey, smallImageKey, startTimestamp, endTimestamp);
-    system("touch ~/.local/share/anime-game-launcher/logs/rpc.log");
-    ofstream LogFile;
     
     while (true)
     {
         std::this_thread::sleep_for(std::chrono::milliseconds(5000));
-        system("if pgrep -x \"GenshinImpact.e\" > /dev/null; then echo \"Running\";else if pgrep -x \"an-anime-game-l\" > /dev/null; then echo \"Launcher Running\" > ~/.local/share/anime-game-launcher/logs/rpc.log ;else killall discord-rpc > ~/.local/share/anime-game-launcher/logs/rpc.log;fi; fi");
+        system("if pgrep -x \"GenshinImpact.e\" > /dev/null; then echo \"Running\";else if pgrep -x \"an-anime-game-l\" > /dev/null; then echo \"Launcher Running\";else killall discord-rpc;fi; fi");
     };
     return 0;
 }

@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Apr 24 20:01:22 2022
+# Make data base, printed on Sun Apr 24 22:24:20 2022
 
 # Variables
 
@@ -17,11 +17,15 @@ LC_ALL = C
 # environment
 NO_AT_BRIDGE = 1
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-cc8d03ff-d8e8-4f4d-8027-8440f0684c66.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-20d3ee19-96d6-4db4-8736-7eedd47e73dd.sock
 # environment
-VSCODE_CWD = /home/nolife
+VSCODE_CWD = /home/nolife/discord-rpc
+# environment
+WINDOWID = 48234507
 # default
 MAKE_COMMAND := make
+# environment
+HISTFILE = /home/nolife/.histfile
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
@@ -34,6 +38,8 @@ PWD = /home/nolife/discord-rpc
 %D = $(patsubst %/,%,$(dir $%))
 # environment
 MAIL = /var/spool/mail/nolife
+# environment
+LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 OLDPWD = /home/nolife
 # automatic
@@ -68,8 +74,12 @@ APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 MFLAGS = -pqrR
 # default
 .SHELLFLAGS := -c
+# environment
+HISTSIZE = 1000000
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
+# environment
+P9K_SSH = 0
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST := Makefile
 # makefile (from 'Makefile', line 63)
@@ -77,11 +87,13 @@ CMAKE_BINARY_DIR = /home/nolife/discord-rpc
 # automatic
 @F = $(notdir $@)
 # environment
+ZSH = /home/nolife/.oh-my-zsh
+# environment
 LC_COLLATE = C
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 32450
+VSCODE_PID = 15576
 # environment
 XDG_SESSION_TYPE = tty
 # automatic
@@ -97,6 +109,8 @@ DBUS_SESSION_BUS_ADDRESS = disabled:
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
+P9K_TTY = old
+# environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
@@ -105,7 +119,9 @@ SHELL = /bin/sh
 # default
 MAKECMDGOALS := all
 # environment
-SHLVL = 1
+SHLVL = 2
+# environment
+TERMINFO = /usr/lib/kitty/terminfo
 # environment
 MAKELEVEL := 0
 # default
@@ -124,8 +140,12 @@ VSCODE_LOG_NATIVE = false
 ?F = $(notdir $?)
 # environment
 XDG_SEAT = seat0
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:
 # automatic
 +F = $(notdir $+)
+# environment
+LESS = -R
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = undefined
 # 'override' directive
@@ -141,15 +161,25 @@ XDG_VTNR = 1
 # makefile (from 'Makefile', line 54)
 RM = /usr/bin/cmake -E rm -f
 # environment
+SAVEHIST = 1000000
+# environment
+KITTY_WINDOW_ID = 1
+# environment
 DISPLAY = :1
 # environment
 USER = nolife
 # default
 MAKE_VERSION := 4.3
+# environment
+KITTY_PID = 13493
+# environment
+PAGER = less
 # makefile (from 'Makefile', line 35)
 MAKESILENT = -s
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
+# environment
+COLORTERM = truecolor
 # environment
 XDG_SESSION_CLASS = user
 # environment
@@ -161,7 +191,7 @@ ELECTRON_RUN_AS_NODE = 1
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-36b34f13-1.66.2-main.sock
 # environment
-TERM = linux
+TERM = xterm-kitty
 # environment
 XDG_SESSION_ID = 1
 # default
@@ -171,13 +201,17 @@ XDG_SESSION_ID = 1
 # default
 SUFFIXES := 
 # environment
+_P9K_TTY = /dev/pts/0
+# environment
 VSCODE_CLI = 1
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# environment
+KITTY_INSTALLATION_DIR = /usr/lib/kitty
 # variable set hash-table stats:
-# Load=83/1024=8%, Rehash=0, Collisions=3/122=2%
+# Load=100/1024=10%, Rehash=0, Collisions=4/139=3%
 
 # Pattern-specific Variable Values
 
@@ -245,6 +279,7 @@ edit_cache/fast: edit_cache
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
+ 
 #  Last modified 2022-04-24 17:58:39.715834749
 #  File has been updated.
 #  Successfully updated.
@@ -284,7 +319,6 @@ cmake_force:
 #  File has not been updated.
 
 preinstall/fast:
- 
 #  Phony target (prerequisite of .PHONY).
 #  Implicit rule search has not been done.
 #  File does not exist.
@@ -499,7 +533,6 @@ install/local/fast: preinstall/fast
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
- 
 
 install/strip: preinstall
 #  Phony target (prerequisite of .PHONY).
@@ -531,7 +564,8 @@ discord-rpc.cpp.s:
 
 # strcache performance: lookups = 216 / hit rate = 70%
 # hash-table stats:
+ 
 # Load=63/8192=1%, Rehash=0, Collisions=0/216=0%
-# Finished Make data base on Sun Apr 24 20:01:22 2022
+# Finished Make data base on Sun Apr 24 22:24:20 2022
 
  
