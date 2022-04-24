@@ -97,9 +97,6 @@ int main(int argc, char *argv[])
     
     while (true)
     {
-        LogFile.open("~/.local/share/anime-game-launcher/logs/rpc.log");
-        LogFile << "Loop Ran.\n";
-        LogFile.close();
         std::this_thread::sleep_for(std::chrono::milliseconds(5000));
         system("if pgrep -x \"GenshinImpact.e\" > /dev/null; then echo \"Running\";else if pgrep -x \"an-anime-game-l\" > /dev/null; then echo \"Launcher Running\" > ~/.local/share/anime-game-launcher/logs/rpc.log ;else killall discord-rpc > ~/.local/share/anime-game-launcher/logs/rpc.log;fi; fi");
     };
