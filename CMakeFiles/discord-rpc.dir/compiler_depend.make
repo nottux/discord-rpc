@@ -200,14 +200,25 @@ CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o: discord-rpc.cpp \
   /usr/include/c++/11.2.0/bits/invoke.h \
   /usr/include/c++/11.2.0/bits/refwrap.h \
   /usr/include/c++/11.2.0/bits/unique_ptr.h \
-  /usr/include/c++/11.2.0/bits/this_thread_sleep.h
+  /usr/include/c++/11.2.0/bits/this_thread_sleep.h \
+  /usr/include/c++/11.2.0/fstream \
+  /usr/include/c++/11.2.0/bits/codecvt.h \
+  /usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/basic_file.h \
+  /usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/c++io.h \
+  /usr/include/c++/11.2.0/bits/fstream.tcc
 
+
+/usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/c++io.h:
+
+/usr/include/c++/11.2.0/bits/codecvt.h:
 
 /usr/include/c++/11.2.0/bits/invoke.h:
 
 /usr/include/c++/11.2.0/bits/uses_allocator.h:
 
 /usr/include/c++/11.2.0/array:
+
+/usr/include/c++/11.2.0/fstream:
 
 /usr/include/c++/11.2.0/bits/stl_relops.h:
 
@@ -399,6 +410,8 @@ include/discord_rpc.h:
 
 /usr/include/bits/sched.h:
 
+/usr/include/c++/11.2.0/bits/fstream.tcc:
+
 /usr/include/sys/cdefs.h:
 
 /usr/include/stdio.h:
@@ -544,6 +557,8 @@ discord-rpc.cpp:
 /usr/include/bits/types/clockid_t.h:
 
 /usr/include/bits/atomic_wide_counter.h:
+
+/usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/basic_file.h:
 
 /usr/include/c++/11.2.0/system_error:
 
