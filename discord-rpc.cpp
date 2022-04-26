@@ -10,24 +10,24 @@ static char APPLICATION_ID[18] = {};
 
 static void updateDiscordPresence(char *details, char *state, char *largeImageKey, char *smallImageKey, int64_t startTimestamp, int64_t endTimestamp)
 {
-    DiscordRichPresence discordPresence;
+    DiscordRichPresence *discordPresence=new DiscordRichPresence;
 
-    memset(&discordPresence, 0, sizeof(discordPresence));
+    memset(discordPresence, 0, sizeof(&discordPresence));
 
-    discordPresence.state = state;
-    discordPresence.details = details;
+    discordPresence->state = state;
+    discordPresence->details = details;
 
     if (startTimestamp != 0)
-        discordPresence.startTimestamp = startTimestamp;
+        discordPresence->startTimestamp = startTimestamp;
 
     if (endTimestamp != 0)
-        discordPresence.endTimestamp = endTimestamp;
+        discordPresence->endTimestamp = endTimestamp;
 
-    discordPresence.largeImageKey = largeImageKey;
-    discordPresence.smallImageKey = smallImageKey;
-    discordPresence.instance = 0;
+    discordPresence->largeImageKey = largeImageKey;
+    discordPresence->smallImageKey = smallImageKey;
+    discordPresence->instance = 0;
 
-    Discord_UpdatePresence(&discordPresence);
+    Discord_UpdatePresence(discordPresence);
 }
 
 int main(int argc, char *argv[])
@@ -95,11 +95,8 @@ int main(int argc, char *argv[])
     while (true)
     {
         std::this_thread::sleep_for(std::chrono::milliseconds(5000));
-<<<<<<< HEAD
-        system("if pgrep -x \"GenshinImpact.e\" > /dev/null; then echo \"Running\";else if pgrep -x \"an-anime-game-l\" > /dev/null; then echo \"Launcher Running\" > /dev/null ;else killall discord;fi; fi");
-=======
         system("if pgrep -x \"GenshinImpact.e\" > /dev/null; then echo \"Running\";else if pgrep -x \"an-anime-game-l\" > /dev/null; then echo \"Launcher Running\";else killall discord-rpc;fi; fi");
->>>>>>> f53579bde1d5be370e0eb9e5b30bc9b2b41588b1
     };
+
     return 0;
 }
