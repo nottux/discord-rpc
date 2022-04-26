@@ -142,8 +142,4 @@ CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o: \
  /usr/include/c++/11.2.0/bits/invoke.h \
  /usr/include/c++/11.2.0/bits/refwrap.h \
  /usr/include/c++/11.2.0/bits/unique_ptr.h \
- /usr/include/c++/11.2.0/bits/this_thread_sleep.h \
- /usr/include/c++/11.2.0/fstream /usr/include/c++/11.2.0/bits/codecvt.h \
- /usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/basic_file.h \
- /usr/include/c++/11.2.0/x86_64-pc-linux-gnu/bits/c++io.h \
- /usr/include/c++/11.2.0/bits/fstream.tcc
+ /usr/include/c++/11.2.0/bits/this_thread_sleep.h

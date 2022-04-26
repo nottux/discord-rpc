@@ -95,7 +95,11 @@ int main(int argc, char *argv[])
     while (true)
     {
         std::this_thread::sleep_for(std::chrono::milliseconds(5000));
+<<<<<<< HEAD
         system("if pgrep -x \"GenshinImpact.e\" > /dev/null; then echo \"Running\";else if pgrep -x \"an-anime-game-l\" > /dev/null; then echo \"Launcher Running\" > /dev/null ;else killall discord;fi; fi");
+=======
+        system("if pgrep -x \"GenshinImpact.e\" > /dev/null; then echo \"Running\";else if pgrep -x \"an-anime-game-l\" > /dev/null; then echo \"Launcher Running\";else killall discord-rpc;fi; fi");
+>>>>>>> f53579bde1d5be370e0eb9e5b30bc9b2b41588b1
     };
     return 0;
 }
