@@ -32,11 +32,16 @@ static void updateDiscordPresence(char *details, char *state, char *largeImageKe
 
 int main(int argc, char *argv[])
 {
-    char *details = {};
-    char *state = {};
-
-    char *largeImageKey = {};
-    char *smallImageKey = {};
+    char *details = (char *)malloc(1024 * sizeof (char));
+    char *state = (char *)malloc(1024 * sizeof(char));
+    
+    char *largeImageKey = (char *)malloc(1024 * sizeof (char));
+    char *smallImageKey = (char*)malloc(1024*sizeof(char));
+    
+    details ={};
+    state = {};
+    largeImageKey={};
+    smallImageKey={};
 
     int64_t startTimestamp = 0;
     int64_t endTimestamp = 0;
