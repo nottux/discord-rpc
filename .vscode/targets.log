@@ -6,7 +6,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun Apr 24 22:24:20 2022
+# Make data base, printed on Mon Apr 25 07:59:52 2022
 
 # Variables
 
@@ -17,11 +17,11 @@ LC_ALL = C
 # environment
 NO_AT_BRIDGE = 1
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-20d3ee19-96d6-4db4-8736-7eedd47e73dd.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-a28495af-66d5-4119-9833-b8fef2970e40.sock
 # environment
 VSCODE_CWD = /home/nolife/discord-rpc
 # environment
-WINDOWID = 48234507
+WINDOWID = 62914571
 # default
 MAKE_COMMAND := make
 # environment
@@ -43,6 +43,7 @@ LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
 OLDPWD = /home/nolife
 # automatic
+ 
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 VSCODE_LOG_STACK = false
@@ -93,7 +94,7 @@ LC_COLLATE = C
 # environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 15576
+VSCODE_PID = 4095
 # environment
 XDG_SESSION_TYPE = tty
 # automatic
@@ -171,7 +172,7 @@ USER = nolife
 # default
 MAKE_VERSION := 4.3
 # environment
-KITTY_PID = 13493
+KITTY_PID = 3956
 # environment
 PAGER = less
 # makefile (from 'Makefile', line 35)
@@ -279,7 +280,6 @@ edit_cache/fast: edit_cache
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
- 
 #  Last modified 2022-04-24 17:58:39.715834749
 #  File has been updated.
 #  Successfully updated.
@@ -332,6 +332,7 @@ edit_cache:
 #  File does not exist.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 70):
+ 
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
 	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 
@@ -552,6 +553,7 @@ discord-rpc.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/discord-rpc.dir/build.make CMakeFiles/discord-rpc.dir/discord-rpc.cpp.s
 
 # files hash-table stats:
+ 
 # Load=37/1024=4%, Rehash=0, Collisions=6/134=4%
 # VPATH Search Paths
 
@@ -564,8 +566,7 @@ discord-rpc.cpp.s:
 
 # strcache performance: lookups = 216 / hit rate = 70%
 # hash-table stats:
- 
 # Load=63/8192=1%, Rehash=0, Collisions=0/216=0%
-# Finished Make data base on Sun Apr 24 22:24:20 2022
+# Finished Make data base on Mon Apr 25 07:59:52 2022
 
  
