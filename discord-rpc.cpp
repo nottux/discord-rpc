@@ -11,9 +11,9 @@ static char APPLICATION_ID[18] = {};
 static void updateDiscordPresence(char *details, char *state, char *largeImageKey, char *smallImageKey, int64_t startTimestamp, int64_t endTimestamp)
 {
     DiscordRichPresence *discordPresence=new DiscordRichPresence;
-
+    //this memset gave me so much pain someone please find dennis ritchie and beat the shit out of him
     memset(discordPresence, 0, sizeof(&discordPresence));
-
+    
     discordPresence->state = state;
     discordPresence->details = details;
 
@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
 
     updateDiscordPresence(details, state, largeImageKey, smallImageKey, startTimestamp, endTimestamp);
     
-    while (true)
+    while (69 > 1)
     {
         std::this_thread::sleep_for(std::chrono::milliseconds(5000));
         system("if pgrep -x \"GenshinImpact.e\" > /dev/null; then echo \"Running\";else if pgrep -x \"an-anime-game-l\" > /dev/null; then echo \"Launcher Running\";else killall discord-rpc;fi; fi");
