@@ -33,12 +33,12 @@ static void updateDiscordPresence(char *details, char *state, char *largeImageKe
 int main(int argc, char *argv[])
 {
     char *details = {}; 
-    char *state = {};
+    char *state= {}; 
     
     char *largeImageKey ={};
     char *smallImageKey ={}; 
     
-
+    
     int64_t startTimestamp = 0;
     int64_t endTimestamp = 0;
 
@@ -53,8 +53,7 @@ int main(int argc, char *argv[])
                 APPLICATION_ID[j] = argv[i + 1][j];
 
         else if (arg == "--details" || arg == "-d")
-            details = argv[i + 1];
-
+            details = argv[i + 1]; 
         else if (arg == "--state" || arg == "-s")
             state = argv[i + 1];
 
@@ -63,7 +62,7 @@ int main(int argc, char *argv[])
 
         else if (arg == "--small-image-key" || arg == "-si")
             smallImageKey = argv[i + 1];
-
+            
         else if (arg == "--start-timestamp" || arg == "-st")
             startTimestamp = stoi(argv[i + 1]);
 
@@ -92,8 +91,8 @@ int main(int argc, char *argv[])
     Discord_Initialize(APPLICATION_ID, &handlers, 1, NULL);
 
     updateDiscordPresence(details, state, largeImageKey, smallImageKey, startTimestamp, endTimestamp);
-    
-    while (69 > 1)
+    printf("called rpc update");
+    for(;;)
     {
         std::this_thread::sleep_for(std::chrono::milliseconds(5000));
         system("if pgrep -x \"GenshinImpact.e\" > /dev/null; then echo \"Running\";else if pgrep -x \"an-anime-game-l\" > /dev/null; then echo \"Launcher Running\";else killall discord-rpc;fi; fi");
