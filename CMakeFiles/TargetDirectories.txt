@@ -1,7 +1,0 @@
-/home/nolife/discord-rpc/CMakeFiles/discord-rpc.dir
-/home/nolife/discord-rpc/CMakeFiles/edit_cache.dir
-/home/nolife/discord-rpc/CMakeFiles/rebuild_cache.dir
-/home/nolife/discord-rpc/CMakeFiles/list_install_components.dir
-/home/nolife/discord-rpc/CMakeFiles/install.dir
-/home/nolife/discord-rpc/CMakeFiles/install/local.dir
-/home/nolife/discord-rpc/CMakeFiles/install/strip.dir
