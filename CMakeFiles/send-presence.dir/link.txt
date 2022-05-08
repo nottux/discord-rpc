@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/send-presence.dir/send-presence.cpp.o -o send-presence  -Wl,-rpath,/home/observer/projects/discord-rpc-cli/lib: lib/libdiscord-rpc.so -ldiscord-rpc 
