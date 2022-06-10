@@ -1,5 +1,0 @@
-make --dry-run --keep-going --print-directory
-make: Entering directory '/home/j2/discord-rpc'
-make: 'discord-rpc' is up to date.
-make: Leaving directory '/home/j2/discord-rpc'
- 
