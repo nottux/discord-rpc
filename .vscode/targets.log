@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.3
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2020 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon Apr 25 07:59:52 2022
+# Make data base, printed on Fri Jun 10 09:56:52 2022
 
 # Variables
 
@@ -17,15 +19,21 @@ LC_ALL = C
 # environment
 NO_AT_BRIDGE = 1
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-a28495af-66d5-4119-9833-b8fef2970e40.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-9d0268fd-49e2-4806-b821-be1cf2a18fb9.sock
 # environment
-VSCODE_CWD = /home/nolife/discord-rpc
+LC_NAME = en_IN
 # environment
-WINDOWID = 62914571
+LC_NUMERIC = en_IN
+# environment
+VSCODE_CWD = /home/j2/discord-rpc
+# makefile (from 'Makefile', line 7)
+LIBS = lib/libdiscord-rpc.so lib/libdiscord-rpc.a
+# environment
+LESS_TERMCAP_me = [0m
+# environment
+LC_ADDRESS = en_IN
 # default
 MAKE_COMMAND := make
-# environment
-HISTFILE = /home/nolife/.histfile
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
@@ -33,150 +41,167 @@ VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # default
 .VARIABLES := 
 # environment
-PWD = /home/nolife/discord-rpc
+PWD = /home/j2/discord-rpc
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
-MAIL = /var/spool/mail/nolife
+MAIL = /var/spool/mail/j2
 # environment
-LSCOLORS = Gxfxcxdxbxegedabagacad
-# environment
-OLDPWD = /home/nolife
+OLDPWD = /home/j2
 # automatic
- 
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
 VSCODE_LOG_STACK = false
 # automatic
 %F = $(notdir $%)
 # environment
-VSCODE_CODE_CACHE_PATH = /home/nolife/.config/Code/CachedData/dfd34e8260c270da74b5c2d86d61aee4b6d56977
+VSCODE_CODE_CACHE_PATH = /home/j2/.config/Code - OSS/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+XDG_SESSION_PATH = /org/freedesktop/DisplayManager/Session2
 # environment
 LANG = C
 # environment
-XAUTHORITY = /home/nolife/.local/share/sx/xauthority
+XAUTHORITY = /home/j2/.Xauthority
 # default
 .LOADED := 
+# environment
+LESS_TERMCAP_md = [01;32m
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
-# makefile (from 'Makefile', line 51)
-CMAKE_COMMAND = /usr/bin/cmake
+# environment
+GNOME_TERMINAL_SERVICE = :1.139
 # makefile
 MAKEFLAGS = pqrR
+# environment
+LESS_TERMCAP_so = [01;47;34m
 # makefile
-CURDIR := /home/nolife/discord-rpc
+CURDIR := /home/j2/discord-rpc
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
 # automatic
 *D = $(patsubst %/,%,$(dir $*))
 # environment
+LESS_TERMCAP_ue = [0m
+# environment
 MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # default
 .SHELLFLAGS := -c
-# environment
-HISTSIZE = 1000000
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
 P9K_SSH = 0
+# environment
+XDG_SESSION_DESKTOP = GNOME
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST := Makefile
-# makefile (from 'Makefile', line 63)
-CMAKE_BINARY_DIR = /home/nolife/discord-rpc
 # automatic
 @F = $(notdir $@)
 # environment
-ZSH = /home/nolife/.oh-my-zsh
-# environment
-LC_COLLATE = C
-# environment
 VSCODE_VERBOSE_LOGGING = true
 # environment
-VSCODE_PID = 4095
+VSCODE_PID = 14640
 # environment
-XDG_SESSION_TYPE = tty
+MOZ_ENABLE_WAYLAND = 1
+# environment
+XDG_SESSION_TYPE = x11
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
-# makefile (from 'Makefile', line 60)
-CMAKE_SOURCE_DIR = /home/nolife/discord-rpc
+# environment
+SESSION_MANAGER = local/lol:@/tmp/.ICE-unix/674,unix/lol:/tmp/.ICE-unix/674
 # automatic
 *F = $(notdir $*)
 # environment
-CHROME_DESKTOP = code-url-handler.desktop
+QT_QPA_PLATFORMTHEME = qt5ct
 # environment
-DBUS_SESSION_BUS_ADDRESS = disabled:
+CHROME_DESKTOP = code-oss.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # automatic
 <D = $(patsubst %/,%,$(dir $<))
 # environment
 P9K_TTY = old
 # environment
-VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
-# makefile (from 'Makefile', line 48)
+# makefile
 SHELL = /bin/sh
+# environment
+LESS_TERMCAP_us = [01;36m
 # default
 MAKECMDGOALS := all
 # environment
-SHLVL = 2
+XMODIFIERS = @im=ibus
 # environment
-TERMINFO = /usr/lib/kitty/terminfo
+SHLVL = 1
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/e37f7926_470c_404d_9035_fba5b76f50f4
 # environment
 MAKELEVEL := 0
 # default
 MAKE = $(MAKE_COMMAND)
 # environment
-PATH = /usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+PATH = /home/j2/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
+# environment
+LESS_TERMCAP_se = [0m
 # default
 MAKEFILES := 
+# environment
+LC_MONETARY = en_IN
 # environment
 MOTD_SHOWN = pam
 # automatic
 ^F = $(notdir $^)
 # environment
+LC_TIME = en_IN
+# environment
+LESS_TERMCAP_mb = [01;32m
+# environment
 VSCODE_LOG_NATIVE = false
+# environment
+LC_TELEPHONE = en_IN
 # automatic
 ?F = $(notdir $?)
 # environment
-XDG_SEAT = seat0
+XDG_CURRENT_DESKTOP = GNOME
 # environment
-LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=00:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.avif=01;35:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:*~=00;90:*#=00;90:*.bak=00;90:*.old=00;90:*.orig=00;90:*.part=00;90:*.rej=00;90:*.swp=00;90:*.tmp=00;90:*.dpkg-dist=00;90:*.dpkg-old=00;90:*.ucf-dist=00;90:*.ucf-new=00;90:*.ucf-old=00;90:*.rpmnew=00;90:*.rpmorig=00;90:*.rpmsave=00;90:
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
 # automatic
 +F = $(notdir $+)
 # environment
+XDG_SEAT_PATH = /org/freedesktop/DisplayManager/Seat0
+# environment
 LESS = -R
 # environment
-ORIGINAL_XDG_CURRENT_DESKTOP = undefined
+DESKTOP_SESSION = gnome-xorg
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = GNOME
 # 'override' directive
 GNUMAKEFLAGS := 
-# makefile (from 'Makefile', line 57)
-EQUALS = =
 # environment
-LOGNAME = nolife
-# environment
-XDG_VTNR = 1
+LOGNAME = j2
 # makefile
-.DEFAULT_GOAL := default_target
-# makefile (from 'Makefile', line 54)
-RM = /usr/bin/cmake -E rm -f
+.DEFAULT_GOAL := discord-rpc
 # environment
-SAVEHIST = 1000000
+SYSTEMD_EXEC_PID = 690
 # environment
-KITTY_WINDOW_ID = 1
+EDITOR = /usr/bin/nano
 # environment
-DISPLAY = :1
+DISPLAY = :0
 # environment
-USER = nolife
+USER = j2
 # default
 MAKE_VERSION := 4.3
 # environment
-KITTY_PID = 3956
+LC_MEASUREMENT = en_IN
 # environment
-PAGER = less
-# makefile (from 'Makefile', line 35)
-MAKESILENT = -s
+_ = /usr/bin/make
+# environment
+LC_PAPER = en_IN
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -186,33 +211,49 @@ XDG_SESSION_CLASS = user
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
-HOME = /home/nolife
+HOME = /home/j2
+# environment
+QT_IM_MODULE = ibus
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-VSCODE_IPC_HOOK = /run/user/1000/vscode-36b34f13-1.66.2-main.sock
+VSCODE_IPC_HOOK = /run/user/1000/vscode-ce93fe7c-1.67.2-main.sock
 # environment
-TERM = xterm-kitty
-# environment
-XDG_SESSION_ID = 1
+TERM = xterm-256color
 # default
 .RECIPEPREFIX := 
 # automatic
 <F = $(notdir $<)
 # default
 SUFFIXES := 
+# makefile (from 'Makefile', line 4)
+TARGET = discord-rpc
+# environment
+QT_AUTO_SCREEN_SCALE_FACTOR = 1
 # environment
 _P9K_TTY = /dev/pts/0
 # environment
 VSCODE_CLI = 1
 # environment
 ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+VTE_VERSION = 6800
+# environment
+LS_OPTIONS = --color=auto
+# makefile (from 'Makefile', line 2)
+CXXFLAGS = -Wall -fno-stack-protector -Ofast -flto
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink guile load
+# makefile (from 'Makefile', line 1)
+CC = g++
 # environment
-KITTY_INSTALLATION_DIR = /usr/lib/kitty
+XDG_MENU_PREFIX = gnome-
+# environment
+PKGFILE_PROMPT_INSTALL_MISSING = 1
+# environment
+LC_IDENTIFICATION = en_IN
 # variable set hash-table stats:
-# Load=100/1024=10%, Rehash=0, Collisions=4/139=3%
+# Load=120/1024=12%, Rehash=0, Collisions=20/153=13%
 
 # Pattern-specific Variable Values
 
@@ -220,353 +261,83 @@ KITTY_INSTALLATION_DIR = /usr/lib/kitty
 
 # Directories
 
-# RCS: could not be stat'd.
-# SCCS: could not be stat'd.
-# . (device 66306, inode 560521): 17 files, no impossibilities.
+# . (device 66306, inode 6821643): 11 files, no impossibilities.
 
-# 17 files, no impossibilities in 3 directories.
+# 11 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
-%: %,v
+# No implicit rules.
 
-%: RCS/%
-
-%: RCS/%,v
-
-%: SCCS/s.%
-
-%: s.%
-
-%.hpux_make_needs_suffix_list:
-
-# 6 implicit rules, 0 (0.0%) terminal.
 # Files
 
-discord-rpc.i: discord-rpc.cpp.i
-#  Phony target (prerequisite of .PHONY).
+# Not a target:
+discord-rpc.cpp:
 #  Implicit rule search has not been done.
-#  File does not exist.
+#  Modification time never checked.
 #  File has not been updated.
 
-depend:
-#  Phony target (prerequisite of .PHONY).
+# Not a target:
+lib/libdiscord-rpc.so:
 #  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 161):
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
-
-default_target: all
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-
-discord-rpc.cpp.o:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 182):
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/discord-rpc.dir/build.make CMakeFiles/discord-rpc.dir/discord-rpc.cpp.o
-
-edit_cache/fast: edit_cache
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
+#  Modification time never checked.
 #  File has not been updated.
 
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-04-24 17:58:39.715834749
+#  Last modified 2022-06-10 09:56:25.086433768
 #  File has been updated.
 #  Successfully updated.
 
-rebuild_cache:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 80):
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-
-.SILENT:
+# Not a target:
+lib/libdiscord-rpc.a:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
-#  File has not been updated.
-
-discord-rpc.s: discord-rpc.cpp.s
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
 #  File has not been updated.
 
 clean:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 142):
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
-
-cmake_force:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-
-preinstall/fast:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 156):
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
-
-edit_cache:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 70):
- 
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
-	/usr/bin/ccmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-
-discord-rpc/fast:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 174):
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/discord-rpc.dir/build.make CMakeFiles/discord-rpc.dir/build
-
-rebuild_cache/fast: rebuild_cache
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-
-# Not a target:
-.hpux_make_needs_suffix_list:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-
-preinstall: all
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 151):
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+#  recipe to execute (from 'Makefile', line 11):
+	rm -rf $(TARGET)
 
 # Not a target:
 .DEFAULT:
 #  Implicit rule search has not been done.
+ 
 #  Modification time never checked.
 #  File has not been updated.
 
-list_install_components/fast: list_install_components
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-
-all: cmake_check_build_system
-#  Phony target (prerequisite of .PHONY).
+# Not a target:
+all:
 #  Command line target.
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# variable set hash-table stats:
-# Load=0/32=0%, Rehash=0, Collisions=0/6=0%
-#  recipe to execute (from 'Makefile', line 135):
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nolife/discord-rpc/CMakeFiles /home/nolife/discord-rpc//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/nolife/discord-rpc/CMakeFiles 0
-
-help:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 203):
-	@echo "The following are some of the valid targets for this Makefile:"
-	@echo "... all (the default if no target is provided)"
-	@echo "... clean"
-	@echo "... depend"
-	@echo "... edit_cache"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... list_install_components"
-	@echo "... rebuild_cache"
-	@echo "... discord-rpc"
-	@echo "... discord-rpc.o"
-	@echo "... discord-rpc.i"
-	@echo "... discord-rpc.s"
-
-clean/fast: clean
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
+#  Implicit rule search has been done.
 #  File does not exist.
 #  File has not been updated.
 
-install/fast: preinstall/fast
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 105):
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-
-install/local: preinstall
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 111):
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-
-.NOTPARALLEL:
+discord-rpc: discord-rpc.cpp lib/libdiscord-rpc.so lib/libdiscord-rpc.a
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-
-discord-rpc: cmake_check_build_system
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 169):
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 discord-rpc
-
-install: preinstall
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 99):
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/bin/cmake -P cmake_install.cmake
-
-list_install_components:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 90):
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-
-discord-rpc.o: discord-rpc.cpp.o
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-
-cmake_check_build_system:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  Implicit/static pattern stem: ''
-#  File does not exist.
-#  File has been updated.
-#  Needs to be updated (-q is set).
-# automatic
-# @ := cmake_check_build_system
-# automatic
-# * := 
-# automatic
-# < := 
-# automatic
-# + := 
-# automatic
-# % := 
-# automatic
-# ^ := 
-# automatic
-# ? := 
-# automatic
-# | := 
-# variable set hash-table stats:
-# Load=8/32=25%, Rehash=0, Collisions=1/14=7%
-#  recipe to execute (from 'Makefile', line 228):
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
-
-install/strip/fast: preinstall/fast
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 129):
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-
-discord-rpc.cpp.i:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 190):
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/discord-rpc.dir/build.make CMakeFiles/discord-rpc.dir/discord-rpc.cpp.i
-
-.SUFFIXES: .hpux_make_needs_suffix_list
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-install/local/fast: preinstall/fast
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 117):
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-
-.PHONY: default_target cmake_force edit_cache edit_cache/fast rebuild_cache rebuild_cache/fast list_install_components list_install_components/fast install install/fast install/local install/local/fast install/strip install/strip/fast all clean clean/fast preinstall preinstall/fast depend discord-rpc discord-rpc/fast discord-rpc.o discord-rpc.cpp.o discord-rpc.i discord-rpc.cpp.i discord-rpc.s discord-rpc.cpp.s help cmake_check_build_system
-#  Implicit rule search has not been done.
-#  Modification time never checked.
-#  File has not been updated.
-
-install/strip: preinstall
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 123):
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-
-discord-rpc.cpp.s:
-#  Phony target (prerequisite of .PHONY).
-#  Implicit rule search has not been done.
-#  File does not exist.
-#  File has not been updated.
-#  recipe to execute (from 'Makefile', line 198):
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/discord-rpc.dir/build.make CMakeFiles/discord-rpc.dir/discord-rpc.cpp.s
+#  recipe to execute (from 'Makefile', line 9):
+	$(CC) $(TARGET).cpp -L./lib/ -o $(TARGET) -ldiscord-rpc $(CXXFLAGS)
 
 # files hash-table stats:
- 
-# Load=37/1024=4%, Rehash=0, Collisions=6/134=4%
+# Load=9/1024=1%, Rehash=0, Collisions=0/22=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 63 / storage = 775 B / avg = 12 B
-# current buf: size = 8162 B / used = 775 B / count = 63 / avg = 12 B
+# strcache buffers: 1 (0) / strings = 19 / storage = 190 B / avg = 10 B
+# current buf: size = 8162 B / used = 190 B / count = 19 / avg = 10 B
 
-# strcache performance: lookups = 216 / hit rate = 70%
+# strcache performance: lookups = 27 / hit rate = 29%
 # hash-table stats:
-# Load=63/8192=1%, Rehash=0, Collisions=0/216=0%
-# Finished Make data base on Mon Apr 25 07:59:52 2022
+# Load=19/8192=0%, Rehash=0, Collisions=0/27=0%
+# Finished Make data base on Fri Jun 10 09:56:52 2022
 
  
