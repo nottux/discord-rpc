@@ -31,15 +31,15 @@ static void updateDiscordPresence(char *details, char *state, char *largeImageKe
 
 int main(int argc, char *argv[])
 {
-    char *details = {}; 
-    char *state= {}; 
+    char *details = (char*)malloc(1024*sizeof(char)); 
+    char *state= (char*)malloc(1024*sizeof(char));
     
-    char *largeImageKey ={};
-    char *smallImageKey ={}; 
+    char *largeImageKey =(char*)malloc(1024*sizeof(char));
+    char *smallImageKey =(char*)malloc(1024*sizeof(char));
     
     
-    int64_t startTimestamp = 0;
-    int64_t endTimestamp = 0;
+    uint64_t startTimestamp = 0;
+    uint64_t endTimestamp = 0;
 
     bool verbose = false;
 
@@ -96,6 +96,5 @@ int main(int argc, char *argv[])
         std::this_thread::sleep_for(std::chrono::milliseconds(5000));
         system("if pgrep -x \"GenshinImpact.e\" > /dev/null; then echo \"Running\";else if pgrep -x \"an-anime-game-l\" > /dev/null; then echo \"Launcher Running\";else killall discord-rpc;fi; fi");
     };
-
     return 0;
 }
