@@ -4,7 +4,6 @@
 #include <limits>
 #include <chrono>
 #include <thread>
-using namespace std;
 
 static char APPLICATION_ID[18] = {};
 
@@ -47,7 +46,7 @@ int main(int argc, char *argv[])
     for (int i = 0; i < argc; i++)
     {
         std::string arg = argv[i];
-        cout << arg << endl;
+        std::cout << arg << std::endl;
         if (arg == "--application-id" || arg == "--app" || arg == "-a")
             for (int j = 0; j < 19; ++j)
                 APPLICATION_ID[j] = argv[i + 1][j];
@@ -64,10 +63,10 @@ int main(int argc, char *argv[])
             smallImageKey = argv[i + 1];
             
         else if (arg == "--start-timestamp" || arg == "-st")
-            startTimestamp = stoi(argv[i + 1]);
+            startTimestamp = std::stoi(argv[i + 1]);
 
         else if (arg == "--end-timestamp" || arg == "-et")
-            endTimestamp = stoi(argv[i + 1]);
+            endTimestamp = std::stoi(argv[i + 1]);
 
         else if (arg == "--verbose" || arg == "-v")
             verbose = true;
@@ -75,13 +74,13 @@ int main(int argc, char *argv[])
 
     if (verbose)
     {
-        cout << "  Application ID: " << APPLICATION_ID << endl;
-        cout << "         Details: " << details << endl;
-        cout << "           State: " << state << endl;
-        cout << "      Large icon: " << (largeImageKey ? largeImageKey : "<none>") << endl;
-        cout << "      Small icon: " << (smallImageKey ? smallImageKey : "<none>") << endl;
-        cout << " Begin timestamp: " << startTimestamp << endl;
-        cout << "   End timestamp: " << endTimestamp << endl;
+        std::cout << "  Application ID: " << APPLICATION_ID << std::endl;
+        std::cout << "         Details: " << details << std::endl;
+        std::cout << "           State: " << state << std::endl;
+        std::cout << "      Large icon: " << (largeImageKey ? largeImageKey : "<none>") << std::endl;
+        std::cout << "      Small icon: " << (smallImageKey ? smallImageKey : "<none>") << std::endl;
+        std::cout << " Begin timestamp: " << startTimestamp << std::endl;
+        std::cout << "   End timestamp: " << endTimestamp << std::endl;
     }
 
     DiscordEventHandlers handlers;
